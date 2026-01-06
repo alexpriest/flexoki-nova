@@ -1,0 +1,462 @@
+meta {
+    -theme-display-name: "Flexoki Light";
+    -theme-interface-style: light;
+    -theme-vibrancy: none;
+    -theme-accent-color: auto;
+}
+
+
+/*
+ * Flexoki Light Theme for Nova
+ * Based on https://stephango.com/flexoki
+ *
+ * Base colors:
+ *   Paper:    #FFFCF0
+ *   Base-50:  #F2F0E5
+ *   Base-100: #E6E4D9
+ *   Base-200: #DAD8CE
+ *   Text:     #100F0F
+ *   Muted:    #6F6E69 / #878580
+ *
+ * Accent colors (600 values for light theme):
+ *   Red:     #AF3029
+ *   Orange:  #BC5215
+ *   Yellow:  #AD8301
+ *   Green:   #66800B
+ *   Cyan:    #24837B
+ *   Blue:    #205EA6
+ *   Purple:  #5E409D
+ *   Magenta: #A02F6F
+ */
+
+
+/*
+ * Window styles
+ */
+meta.window {
+    background-color: #F2F0E5;
+    border-color: #DAD8CE;
+}
+
+meta.titlebar {
+    color: #100F0F;
+    background: linear-gradient(#FFFCF0, #F2F0E5);
+    border-color: #DAD8CE;
+}
+meta.titlebar.inactive {
+    color: #6F6E69;
+    background-color: #F2F0E5;
+}
+
+meta.button {
+    background: linear-gradient(#FFFCF0, #F2F0E5);
+    border-color: #CECDC3;
+    color: #100F0F;
+}
+meta.button.highlighted {
+    background: linear-gradient(#F2F0E5, #E6E4D9);
+    color: #100F0F;
+}
+meta.button.selected {
+    background-color: #205EA6;
+    color: #FFFCF0;
+}
+meta.button.highlighted.selected {
+    background-color: #4385BE;
+    color: #FFFCF0;
+}
+meta.button.disabled {
+    background-color: #F2F0E5;
+    color: #878580;
+}
+
+meta.textfield {
+    background-color: #FFFCF0;
+    border-color: #CECDC3;
+}
+meta.textfield.highlighted {
+    background-color: #FFFCF0;
+    border-color: #205EA6;
+}
+
+
+/*
+ * Document styles
+ */
+meta.document {
+    background-color: #FFFCF0;
+    border-color: #E6E4D9;
+}
+
+meta.document.button {
+    background: linear-gradient(#F2F0E5, #E6E4D9);
+    border-color: #DAD8CE;
+}
+meta.document.button.disabled {
+    background-color: #F2F0E5;
+}
+meta.document.button.highlighted {
+    background: linear-gradient(#E6E4D9, #DAD8CE);
+}
+
+meta.document.textfield {
+    background-color: #FFFCF0;
+    border-color: #DAD8CE;
+}
+
+/* Text */
+meta.text {
+    color: #100F0F;
+}
+meta.text.invisible {
+    color: #CECDC3;
+}
+meta.text.selected {
+    background-color: #E6E4D9;
+}
+
+/* Current Line Highlight */
+meta.cursor {
+    background-color: #F2F0E5;
+}
+
+/* Indentation Guides */
+meta.indentguide {
+    border-color: #E6E4D9;
+}
+
+/* Gutter */
+meta.gutter {
+    color: #878580;
+}
+meta.gutter.selected {
+    color: #100F0F;
+    background-color: #F2F0E5;
+}
+
+
+/*
+ * Syntax styles
+ */
+
+/* Comments */
+comment {
+    color: #878580;
+    font-style: italic;
+}
+comment.delimiter {
+    color: #B7B5AC;
+}
+comment.doctag {
+    color: #6F6E69;
+    font-style: italic;
+}
+
+/* Keywords */
+keyword {
+    color: #AF3029;
+}
+keyword.self {
+    color: #AF3029;
+    font-style: italic;
+}
+keyword.modifier {
+    color: #A02F6F;
+}
+keyword.condition {
+    color: #AF3029;
+}
+keyword.construct {
+    color: #AF3029;
+}
+keyword.statement {
+    color: #AF3029;
+}
+keyword.operator {
+    color: #5E409D;
+}
+
+/* Operators */
+operator {
+    color: #5E409D;
+}
+
+/* Brackets */
+bracket {
+    color: #6F6E69;
+}
+
+/* Strings */
+string {
+    color: #24837B;
+}
+string.key {
+    color: #205EA6;
+}
+string.escape {
+    color: #66800B;
+}
+string.regex {
+    color: #A02F6F;
+}
+string.regex.escape {
+    color: #66800B;
+}
+
+/* Values */
+value.number {
+    color: #A02F6F;
+}
+value.boolean {
+    color: #AF3029;
+}
+value.null {
+    color: #878580;
+    font-style: italic;
+}
+value.entity {
+    color: #5E409D;
+}
+value.symbol {
+    color: #24837B;
+}
+
+/* Identifiers */
+identifier {
+    color: #100F0F;
+}
+identifier.type {
+    color: #AD8301;
+}
+identifier.type.class {
+    color: #AD8301;
+}
+identifier.type.protocol {
+    color: #AD8301;
+    font-style: italic;
+}
+identifier.type.enum {
+    color: #AD8301;
+}
+identifier.type.union {
+    color: #AD8301;
+}
+identifier.type.struct {
+    color: #AD8301;
+}
+identifier.constant {
+    color: #A02F6F;
+}
+identifier.global {
+    color: #5E409D;
+}
+identifier.variable {
+    color: #100F0F;
+}
+identifier.property {
+    color: #205EA6;
+}
+identifier.function {
+    color: #BC5215;
+}
+identifier.method {
+    color: #BC5215;
+}
+identifier.key {
+    color: #205EA6;
+}
+identifier.argument {
+    color: #5E409D;
+}
+identifier.decorator {
+    color: #A02F6F;
+}
+identifier.core {
+    color: #AF3029;
+}
+
+/* Definitions */
+definition {
+    color: #BC5215;
+}
+definition.class {
+    color: #AD8301;
+    font-weight: bold;
+}
+definition.type {
+    color: #AD8301;
+    font-weight: bold;
+}
+definition.function {
+    color: #BC5215;
+    font-weight: bold;
+}
+definition.method {
+    color: #BC5215;
+    font-weight: bold;
+}
+definition.property {
+    color: #205EA6;
+}
+definition.variable {
+    color: #100F0F;
+}
+definition.constant {
+    color: #A02F6F;
+    font-weight: bold;
+}
+definition.package {
+    color: #66800B;
+}
+
+/* Tags (HTML/XML) */
+tag {
+    color: #AF3029;
+}
+tag.framework {
+    color: #A02F6F;
+}
+tag.attribute.name {
+    color: #BC5215;
+}
+tag.attribute.value {
+    color: #24837B;
+}
+tag.attribute.value.link {
+    color: #205EA6;
+}
+
+/* CSS */
+style.at {
+    color: #A02F6F;
+}
+style.selector.element {
+    color: #AF3029;
+}
+style.selector.identifier.id {
+    color: #AD8301;
+}
+style.selector.identifier.class {
+    color: #BC5215;
+}
+style.selector.pseudoclass {
+    color: #5E409D;
+}
+style.selector.pseudoelement {
+    color: #5E409D;
+}
+style.attribute.name {
+    color: #205EA6;
+}
+style.value.number {
+    color: #A02F6F;
+}
+style.value.color.hex {
+    color: #A02F6F;
+}
+style.value.keyword {
+    color: #24837B;
+}
+style.value.color.named {
+    color: #24837B;
+}
+
+/* Markup (Markdown) */
+markup.heading {
+    color: #AF3029;
+    font-weight: bold;
+}
+markup.bold {
+    font-weight: bold;
+}
+markup.italic {
+    font-style: italic;
+}
+markup.strikethrough {
+    text-decoration: line-through;
+}
+markup.link {
+    color: #205EA6;
+}
+markup.code {
+    color: #24837B;
+    background-color: #F2F0E5;
+}
+markup.block.quote {
+    color: #6F6E69;
+    font-style: italic;
+}
+markup.list.item {
+    color: #5E409D;
+}
+
+/* Processing */
+processing {
+    color: #878580;
+}
+processing.directive {
+    color: #A02F6F;
+}
+
+/* Invalid */
+invalid {
+    color: #AF3029;
+    background-color: #F2F0E5;
+}
+invalid.deprecated {
+    color: #878580;
+    text-decoration: line-through;
+}
+
+
+/*
+ * Terminal
+ */
+terminal.black {
+    color: #100F0F;
+}
+terminal.red {
+    color: #AF3029;
+}
+terminal.green {
+    color: #66800B;
+}
+terminal.yellow {
+    color: #AD8301;
+}
+terminal.blue {
+    color: #205EA6;
+}
+terminal.magenta {
+    color: #A02F6F;
+}
+terminal.cyan {
+    color: #24837B;
+}
+terminal.white {
+    color: #FFFCF0;
+}
+terminal.bright-black {
+    color: #6F6E69;
+}
+terminal.bright-red {
+    color: #D14D41;
+}
+terminal.bright-green {
+    color: #879A39;
+}
+terminal.bright-yellow {
+    color: #D0A215;
+}
+terminal.bright-blue {
+    color: #4385BE;
+}
+terminal.bright-magenta {
+    color: #CE5D97;
+}
+terminal.bright-cyan {
+    color: #3AA99F;
+}
+terminal.bright-white {
+    color: #FFFCF0;
+}

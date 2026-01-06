@@ -1,0 +1,9 @@
+{
+    "identifier": "com.anthimeros.flexoki",
+    "name": "Flexoki",
+    "organization": "Anthimeros",
+    "description": "An inky color scheme for prose and code, based on Steph Ango's Flexoki palette.",
+    "version": "1.0",
+    "categories": ["themes"],
+    "bugs": "https://github.com/kepano/flexoki/issues"
+}
